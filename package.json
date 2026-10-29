@@ -1,0 +1,26 @@
+{
+  "name": "minecraft-gemini-technical-bot",
+  "version": "1.0.0",
+  "description": "Bot inteligente y técnico para servidores Paper/Spigot con Mineflayer y Gemini AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pm2": "pm2 start ecosystem.config.js",
+    "pm2:logs": "pm2 logs tecnik-bot",
+    "pm2:stop": "pm2 stop tecnik-bot"
+  },
+  "dependencies": {
+    "@google/genai": "^2.4.0",
+    "dotenv": "^16.4.7",
+    "minecraft-data": "^3.78.0",
+    "mineflayer": "^4.23.0",
+    "mineflayer-auto-eat": "^3.4.0",
+    "mineflayer-collectblock": "^1.4.1",
+    "mineflayer-pathfinder": "^2.4.5",
+    "mineflayer-pvp": "^1.3.2",
+    "vec3": "^0.1.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
